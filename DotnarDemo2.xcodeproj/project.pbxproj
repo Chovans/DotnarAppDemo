@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		CEBC2B741BB071B7000C89A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2B731BB071B7000C89A2 /* AppDelegate.swift */; };
-		CEBC2B761BB071B7000C89A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2B751BB071B7000C89A2 /* ViewController.swift */; };
+		CEBC2B761BB071B7000C89A2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2B751BB071B7000C89A2 /* HomeViewController.swift */; };
 		CEBC2B791BB071B7000C89A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC2B771BB071B7000C89A2 /* Main.storyboard */; };
 		CEBC2B7C1BB071B7000C89A2 /* DotnarDemo2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2B7A1BB071B7000C89A2 /* DotnarDemo2.xcdatamodeld */; };
 		CEBC2B7E1BB071B7000C89A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBC2B7D1BB071B7000C89A2 /* Assets.xcassets */; };
 		CEBC2B811BB071B7000C89A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC2B7F1BB071B7000C89A2 /* LaunchScreen.storyboard */; };
 		CEBC2B8C1BB071B7000C89A2 /* DotnarDemo2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2B8B1BB071B7000C89A2 /* DotnarDemo2Tests.swift */; };
 		CEBC2B971BB071B7000C89A2 /* DotnarDemo2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2B961BB071B7000C89A2 /* DotnarDemo2UITests.swift */; };
+		CEBC2BAD1BB14B5C000C89A2 /* MenuItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2BAC1BB14B5C000C89A2 /* MenuItemCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		CED649AA1BB68FBB004ED4D3 /* BenefitCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED649A91BB68FBB004ED4D3 /* BenefitCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CEE0CDAC1BB2A5D3006EF24B /* HomeLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDAB1BB2A5D3006EF24B /* HomeLifeView.swift */; settings = {ASSET_TAGS = (); }; };
+		CEE0CDAE1BB2B54F006EF24B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDAD1BB2B54F006EF24B /* UserViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CEE0CDB11BB3BBED006EF24B /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDB01BB3BBED006EF24B /* UserTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CEE0CDB31BB45202006EF24B /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDB21BB45202006EF24B /* FindViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CEE0CDB61BB4F221006EF24B /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDB51BB4F221006EF24B /* OrderViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CEE0CDB91BB4FE78006EF24B /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDB81BB4FE78006EF24B /* ShopViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +45,7 @@
 /* Begin PBXFileReference section */
 		CEBC2B701BB071B7000C89A2 /* DotnarDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotnarDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBC2B731BB071B7000C89A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEBC2B751BB071B7000C89A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEBC2B751BB071B7000C89A2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CEBC2B781BB071B7000C89A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEBC2B7B1BB071B7000C89A2 /* DotnarDemo2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DotnarDemo2.xcdatamodel; sourceTree = "<group>"; };
 		CEBC2B7D1BB071B7000C89A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +57,15 @@
 		CEBC2B921BB071B7000C89A2 /* DotnarDemo2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotnarDemo2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBC2B961BB071B7000C89A2 /* DotnarDemo2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotnarDemo2UITests.swift; sourceTree = "<group>"; };
 		CEBC2B981BB071B7000C89A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEBC2BAC1BB14B5C000C89A2 /* MenuItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		CED649A91BB68FBB004ED4D3 /* BenefitCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitCollectionViewController.swift; sourceTree = "<group>"; };
+		CEE0CDAB1BB2A5D3006EF24B /* HomeLifeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLifeView.swift; sourceTree = "<group>"; };
+		CEE0CDAD1BB2B54F006EF24B /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		CEE0CDAF1BB2BAD5006EF24B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		CEE0CDB01BB3BBED006EF24B /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		CEE0CDB21BB45202006EF24B /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		CEE0CDB51BB4F221006EF24B /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		CEE0CDB81BB4FE78006EF24B /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +116,13 @@
 		CEBC2B721BB071B7000C89A2 /* DotnarDemo2 */ = {
 			isa = PBXGroup;
 			children = (
-				CEBC2B731BB071B7000C89A2 /* AppDelegate.swift */,
-				CEBC2B751BB071B7000C89A2 /* ViewController.swift */,
-				CEBC2B771BB071B7000C89A2 /* Main.storyboard */,
-				CEBC2B7D1BB071B7000C89A2 /* Assets.xcassets */,
-				CEBC2B7F1BB071B7000C89A2 /* LaunchScreen.storyboard */,
-				CEBC2B821BB071B7000C89A2 /* Info.plist */,
+				CEBC2BAE1BB15EAE000C89A2 /* 3rd */,
+				CEBC2BA71BB10647000C89A2 /* Common */,
+				CEBC2BA61BB071DE000C89A2 /* Controller */,
+				CEBC2BA51BB071D1000C89A2 /* StoryBoard */,
+				CEBC2BA41BB071C2000C89A2 /* Support */,
 				CEBC2B7A1BB071B7000C89A2 /* DotnarDemo2.xcdatamodeld */,
+				CEE0CDAF1BB2BAD5006EF24B /* MyPlayground.playground */,
 			);
 			path = DotnarDemo2;
 			sourceTree = "<group>";
@@ -126,6 +143,71 @@
 				CEBC2B981BB071B7000C89A2 /* Info.plist */,
 			);
 			path = DotnarDemo2UITests;
+			sourceTree = "<group>";
+		};
+		CEBC2BA41BB071C2000C89A2 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2B731BB071B7000C89A2 /* AppDelegate.swift */,
+				CEBC2B7D1BB071B7000C89A2 /* Assets.xcassets */,
+				CEBC2B821BB071B7000C89A2 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		CEBC2BA51BB071D1000C89A2 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2B771BB071B7000C89A2 /* Main.storyboard */,
+				CEBC2B7F1BB071B7000C89A2 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		CEBC2BA61BB071DE000C89A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0CDB71BB4FDFC006EF24B /* Shop */,
+				CEE0CDB41BB4F210006EF24B /* User */,
+				CEBC2B751BB071B7000C89A2 /* HomeViewController.swift */,
+				CEE0CDAD1BB2B54F006EF24B /* UserViewController.swift */,
+				CEE0CDB21BB45202006EF24B /* FindViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CEBC2BA71BB10647000C89A2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC2BAC1BB14B5C000C89A2 /* MenuItemCollectionViewCell.swift */,
+				CEE0CDAB1BB2A5D3006EF24B /* HomeLifeView.swift */,
+				CEE0CDB01BB3BBED006EF24B /* UserTableViewController.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		CEBC2BAE1BB15EAE000C89A2 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 3rd;
+			sourceTree = "<group>";
+		};
+		CEE0CDB41BB4F210006EF24B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0CDB51BB4F221006EF24B /* OrderViewController.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		CEE0CDB71BB4FDFC006EF24B /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0CDB81BB4FE78006EF24B /* ShopViewController.swift */,
+				CED649A91BB68FBB004ED4D3 /* BenefitCollectionViewController.swift */,
+			);
+			name = Shop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +343,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBC2BAD1BB14B5C000C89A2 /* MenuItemCollectionViewCell.swift in Sources */,
+				CEE0CDAE1BB2B54F006EF24B /* UserViewController.swift in Sources */,
+				CEE0CDB91BB4FE78006EF24B /* ShopViewController.swift in Sources */,
+				CED649AA1BB68FBB004ED4D3 /* BenefitCollectionViewController.swift in Sources */,
 				CEBC2B7C1BB071B7000C89A2 /* DotnarDemo2.xcdatamodeld in Sources */,
-				CEBC2B761BB071B7000C89A2 /* ViewController.swift in Sources */,
+				CEE0CDB31BB45202006EF24B /* FindViewController.swift in Sources */,
+				CEBC2B761BB071B7000C89A2 /* HomeViewController.swift in Sources */,
+				CEE0CDB11BB3BBED006EF24B /* UserTableViewController.swift in Sources */,
+				CEE0CDAC1BB2A5D3006EF24B /* HomeLifeView.swift in Sources */,
 				CEBC2B741BB071B7000C89A2 /* AppDelegate.swift in Sources */,
+				CEE0CDB61BB4F221006EF24B /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +580,7 @@
 				CEBC2B9D1BB071B7000C89A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEBC2B9E1BB071B7000C89A2 /* Build configuration list for PBXNativeTarget "DotnarDemo2Tests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +589,7 @@
 				CEBC2BA01BB071B7000C89A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEBC2BA11BB071B7000C89A2 /* Build configuration list for PBXNativeTarget "DotnarDemo2UITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +598,7 @@
 				CEBC2BA31BB071B7000C89A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
