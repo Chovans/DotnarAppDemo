@@ -31,15 +31,15 @@ struct MenuItem {
         
         var items = [MenuItem]()
         items.append(MenuItem(backgroundImageName: "price_tag.png", menuName: "聚优惠",red:249,green:131,blue:134))
-        items.append(MenuItem(backgroundImageName: "running.png", menuName: "聚生活",red:72,green:130,blue:251))
-        items.append(MenuItem(backgroundImageName: "dropbox.png", menuName: "生活服务",red:244,green:116,blue:25))
+        items.append(MenuItem(backgroundImageName: "timezone.png", menuName: "本地特供",red:155,green:84,blue:47))
+        items.append(MenuItem(backgroundImageName: "dropbox.png", menuName: "金融服务",red:244,green:116,blue:25))
         items.append(MenuItem(backgroundImageName: "gold_bars.png", menuName: "积分",red:249,green:152,blue:42))
-        items.append(MenuItem(backgroundImageName: "timezone.png", menuName: "本地正品",red:155,green:84,blue:47))
         items.append(MenuItem(backgroundImageName: "dinner.png", menuName: "美食",red:247,green:177,blue:82))
-        items.append(MenuItem(backgroundImageName: "floods.png", menuName: "住宿",red:29,green:216,blue:169))
-        items.append(MenuItem(backgroundImageName: "box.png", menuName: "良品盒子",red:114,green:106,blue:250))
-        items.append(MenuItem(backgroundImageName: "ticket.png", menuName: "抵用券",red:143,green:201,blue:28))
+        items.append(MenuItem(backgroundImageName: "floods.png", menuName: "会所",red:29,green:216,blue:169))
+        items.append(MenuItem(backgroundImageName: "ticket.png", menuName: "商家",red:143,green:201,blue:28))
         items.append(MenuItem(backgroundImageName: "more.png", menuName: "更多",red:82,green:221,blue:142))
+        //        items.append(MenuItem(backgroundImageName: "box.png", menuName: "良品盒子",red:114,green:106,blue:250))
+        //        items.append(MenuItem(backgroundImageName: "running.png", menuName: "聚生活",red:72,green:130,blue:251))
         
         
         return items
@@ -127,8 +127,8 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UICollectionView
     
     func initLifeView(){
         homeLifeView.images.removeAll()
-        for idx in 1...8{
-            homeLifeView.addImage(UIImageView(image: UIImage(named: "g\(idx).png")))
+        for idx in 1...21{
+            homeLifeView.addImage(UIImageView(image: UIImage(named: "g\(idx).jpeg")))
         }
     }
     
@@ -188,7 +188,7 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UICollectionView
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 8
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -207,11 +207,35 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UICollectionView
         cell._view.layer.borderColor = UIColor(r: data.red, g: data.green, b: data.blue, a: 1).CGColor
         cell._view.layer.masksToBounds = true
         
+        //跳转
+        if indexPath.row == 0 || indexPath.row == 1 || indexPath.row == 4 || indexPath.row == 6 || indexPath.row == 7 {
+            let tapGuesture = UITapGestureRecognizer(target: self, action: Selector("go2Shop:"))
+            cell.addGestureRecognizer(tapGuesture)
+        }else if indexPath.row == 3 {
+            let tapGuesture = UITapGestureRecognizer(target: self, action: Selector("go2User:"))
+            cell.addGestureRecognizer(tapGuesture)
+        }else if indexPath.row == 2 {
+            let tapGuesture = UITapGestureRecognizer(target: self, action: Selector("go2Baidu:"))
+            cell.addGestureRecognizer(tapGuesture)
+        }
+        
         return cell
     }
     
+    func go2Baidu(sender:AnyObject){
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.dotnar.com/")!)
+    }
+    
+    func go2Shop(sender:AnyObject){
+        tabBarController?.selectedIndex = 1
+    }
+    
+    func go2User(sender:AnyObject){
+        tabBarController?.selectedIndex = 3
+    }
+    
     func collectionView(collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout,sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize{
-        let width = (UIScreen.mainScreen().bounds.width - 60) / 5
+        let width = (UIScreen.mainScreen().bounds.width - 60) / 4.5
         return CGSize(width:width, height: width * 6 / 5)
     }
     

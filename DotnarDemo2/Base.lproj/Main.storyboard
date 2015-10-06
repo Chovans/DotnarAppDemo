@@ -9,13 +9,13 @@
         <!--首页-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="1020"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="2020"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCW-0f-ZcX">
@@ -39,13 +39,13 @@
                                         </constraints>
                                         <state key="normal" image="message"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dotnar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGa-JH-HVx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="庄主商圈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGa-JH-HVx">
                                         <rect key="frame" x="40" y="25" width="516" height="30"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="utF-6D-fO2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="29"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="25"/>
                                         <color key="textColor" red="0.035294117647058823" green="0.49019607843137253" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -66,8 +66,8 @@
                                     <constraint firstAttribute="bottom" secondItem="k5I-pN-HYW" secondAttribute="bottom" constant="10" id="xS1-ef-Svm"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0bb-R3-9tT">
-                                <rect key="frame" x="-20" y="60" width="640" height="920"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bb-R3-9tT">
+                                <rect key="frame" x="-20" y="60" width="640" height="1940"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qc2-mf-2AA">
                                         <rect key="frame" x="20" y="0.0" width="600" height="200"/>
@@ -99,10 +99,10 @@
                                         </constraints>
                                     </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5TM-Fm-srO">
-                                        <rect key="frame" x="20" y="200" width="600" height="280"/>
+                                        <rect key="frame" x="20" y="200" width="600" height="300"/>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="5TM-Fm-srO" secondAttribute="height" multiplier="15:7" id="qSB-iI-QLV"/>
+                                            <constraint firstAttribute="width" secondItem="5TM-Fm-srO" secondAttribute="height" multiplier="2:1" id="qSB-iI-QLV"/>
                                         </constraints>
                                         <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="NCa-KN-DDg">
@@ -112,7 +112,7 @@
                                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="tWG-7S-mp8" customClass="MenuItemCollectionViewCell" customModule="DotnarDemo2" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="tWG-7S-mp8" customClass="MenuItemCollectionViewCell" customModule="庄主商圈" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="10" width="100" height="120"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -169,7 +169,7 @@
                                         </cells>
                                     </collectionView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wa-O5-Zki">
-                                        <rect key="frame" x="20" y="490" width="600" height="50"/>
+                                        <rect key="frame" x="20" y="510" width="600" height="50"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainPicture1" translatesAutoresizingMaskIntoConstraints="NO" id="Hig-yo-sAp">
                                                 <rect key="frame" x="8" y="5" width="40" height="40"/>
@@ -179,7 +179,7 @@
                                                     <constraint firstAttribute="width" constant="40" id="keF-pB-Be1"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点纳商城 注册有礼活动正在进行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPI-cc-DoL">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="庄主商圈 注册有礼活动正在进行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPI-cc-DoL">
                                                 <rect key="frame" x="56" y="5" width="428" height="40"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -218,7 +218,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWy-Jm-DlE">
-                                        <rect key="frame" x="20" y="548" width="600" height="60"/>
+                                        <rect key="frame" x="20" y="568" width="600" height="60"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hav-vv-1cW">
                                                 <rect key="frame" x="598" y="29" width="2" height="2"/>
@@ -276,12 +276,12 @@
                                             <constraint firstItem="Hav-vv-1cW" firstAttribute="centerY" secondItem="WWy-Jm-DlE" secondAttribute="centerY" id="pmK-9P-Dav"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxr-xt-NqZ" customClass="HomeLifeView" customModule="DotnarDemo2" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="616" width="600" height="300"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxr-xt-NqZ" customClass="HomeLifeView" customModule="庄主商圈" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="636" width="600" height="1400"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="fxr-xt-NqZ" secondAttribute="height" multiplier="2:1" id="RAg-9G-m74"/>
+                                            <constraint firstAttribute="width" secondItem="fxr-xt-NqZ" secondAttribute="height" multiplier="3:7" id="RAg-9G-m74"/>
                                             <constraint firstAttribute="height" constant="50" id="lZu-US-ItK"/>
                                         </constraints>
                                         <variation key="default">
@@ -327,7 +327,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="首页" image="home" selectedImage="home" id="y8N-WJ-JP5"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="1020"/>
+                    <size key="freeformSize" width="600" height="2020"/>
                     <connections>
                         <outlet property="Carousel" destination="urz-Dp-dSO" id="veg-3A-CJ4"/>
                         <outlet property="bannerLiftPoint" destination="iV6-4Z-m3c" id="S9g-N8-KX1"/>
@@ -341,12 +341,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1361" y="1607"/>
+            <point key="canvasLocation" x="1364" y="2123"/>
         </scene>
         <!--商城-->
         <scene sceneID="u1K-Mu-8Zr">
             <objects>
-                <viewController id="Pkj-wM-59H" customClass="ShopViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pkj-wM-59H" customClass="ShopViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TCf-Pg-ryk"/>
                         <viewControllerLayoutGuide type="bottom" id="4Om-V1-S5e"/>
@@ -374,55 +374,41 @@
                                     <constraint firstAttribute="height" constant="1" id="2X3-b5-Wkb"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMK-N4-EFf">
-                                <rect key="frame" x="20" y="69" width="141" height="20"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="dkE-MV-Z0I"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <state key="normal" title="聚优惠">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="selectTabBarAction:" destination="Pkj-wM-59H" eventType="touchUpInside" id="AKT-f6-3J6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaQ-Y3-mCC">
-                                <rect key="frame" x="160" y="69" width="141" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaQ-Y3-mCC">
+                                <rect key="frame" x="160" y="64" width="141" height="29"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Xi5-1v-9DD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <state key="normal" title="聚生活"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="本地特供"/>
                                 <connections>
                                     <action selector="selectTabBarAction:" destination="Pkj-wM-59H" eventType="touchUpInside" id="XKS-fe-nAn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8a-Mz-gcV">
-                                <rect key="frame" x="299.5" y="69" width="141" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8a-Mz-gcV">
+                                <rect key="frame" x="299.5" y="64" width="141" height="29"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="CMa-iw-Bnb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <state key="normal" title="生活服务"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="金融服务"/>
                                 <connections>
                                     <action selector="selectTabBarAction:" destination="Pkj-wM-59H" eventType="touchUpInside" id="m0j-0z-9Fh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzX-rE-mhI">
-                                <rect key="frame" x="439.5" y="69" width="140.5" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzX-rE-mhI">
+                                <rect key="frame" x="439.5" y="64" width="140.5" height="29"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Q3O-mB-7WH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <state key="normal" title="本地正品"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="美食"/>
                                 <connections>
                                     <action selector="selectTabBarAction:" destination="Pkj-wM-59H" eventType="touchUpInside" id="TiO-RV-nta"/>
                                 </connections>
@@ -431,6 +417,20 @@
                                 <rect key="frame" x="0.0" y="97" width="600" height="459"/>
                                 <animations/>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMK-N4-EFf">
+                                <rect key="frame" x="20" y="69" width="141" height="20"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="dkE-MV-Z0I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="聚优惠">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectTabBarAction:" destination="Pkj-wM-59H" eventType="touchUpInside" id="AKT-f6-3J6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -486,7 +486,7 @@
         <!--发现-->
         <scene sceneID="z5C-Zv-VuJ">
             <objects>
-                <viewController id="p4E-D8-pYr" customClass="FindViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="p4E-D8-pYr" customClass="FindViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IPf-ap-w60"/>
                         <viewControllerLayoutGuide type="bottom" id="Kny-LY-n7R"/>
@@ -626,7 +626,7 @@
         <!--Find Detail View Controller-->
         <scene sceneID="2U3-2v-QWm">
             <objects>
-                <viewController id="MhV-Yz-PLs" customClass="FindDetailViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MhV-Yz-PLs" customClass="FindDetailViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZCH-dY-2Va"/>
                         <viewControllerLayoutGuide type="bottom" id="465-Ge-gKg"/>
@@ -655,8 +655,8 @@
                                     <constraint firstAttribute="width" secondItem="qwc-T9-6e9" secondAttribute="height" multiplier="140:47" id="cwg-8W-Vxh"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="     庄主俱乐部倾情打造“滴滴送酒”服务。以F2C形式直接实现酒庄直供，假一罚十，痛击假酒泛滥的市场现象。深圳地区一百多家餐厅合作渠道，滴滴一下，美酒送达！( 营业时间：10:00 - 20:00)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rER-p9-ibO">
-                                <rect key="frame" x="20" y="268" width="560" height="324"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="     庄主俱乐部倾情打造“滴滴送酒”服务。以F2C形式直接实现酒庄直供，假一罚十，痛击假酒泛滥的市场现象。深圳地区一百多家餐厅合作渠道，滴滴一下，美酒送达！( 营业时间：10:00 - 20:00)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rER-p9-ibO">
+                                <rect key="frame" x="20" y="268" width="560" height="275"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -685,7 +685,7 @@
         <!--Benefit Collection View Controller-->
         <scene sceneID="oGN-ky-qag">
             <objects>
-                <collectionViewController storyboardIdentifier="benefit" id="ORu-oq-k0T" customClass="BenefitCollectionViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="benefit" id="ORu-oq-k0T" customClass="BenefitCollectionViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="UEv-IA-SRv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -808,7 +808,7 @@
         <!--Goods Detail View Controller-->
         <scene sceneID="eaS-5Q-Pxp">
             <objects>
-                <viewController storyboardIdentifier="goodsDetail" id="Mo0-yG-DP9" customClass="GoodsDetailViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="goodsDetail" id="Mo0-yG-DP9" customClass="GoodsDetailViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DAA-xq-W5p"/>
                         <viewControllerLayoutGuide type="bottom" id="HG0-yc-Yd9"/>
@@ -850,7 +850,7 @@
         <!--Order Confirm View Controller-->
         <scene sceneID="FCa-Pl-gcD">
             <objects>
-                <viewController id="cgM-Gw-7bZ" customClass="OrderConfirmViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cgM-Gw-7bZ" customClass="OrderConfirmViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F8L-cz-DYm"/>
                         <viewControllerLayoutGuide type="bottom" id="Ryv-XQ-jVQ"/>
@@ -892,7 +892,7 @@
         <!--个人-->
         <scene sceneID="iME-ZT-Ksh">
             <objects>
-                <viewController id="qIl-ik-sWx" customClass="UserViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qIl-ik-sWx" customClass="UserViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y7a-XW-UpX"/>
                         <viewControllerLayoutGuide type="bottom" id="2OT-32-wTT"/>
@@ -926,7 +926,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="158888888" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRZ-BL-H1r">
-                                        <rect key="frame" x="8" y="257" width="189.5" height="35"/>
+                                        <rect key="frame" x="8" y="257" width="190" height="35"/>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -948,7 +948,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="VIP会员" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ag-tR-pk6">
-                                        <rect key="frame" x="402" y="257" width="189.5" height="35"/>
+                                        <rect key="frame" x="402" y="257" width="190" height="35"/>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -1021,7 +1021,7 @@
         <!--Order View Controller-->
         <scene sceneID="IkV-5v-6w7">
             <objects>
-                <viewController id="Pya-sh-3M1" customClass="OrderViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pya-sh-3M1" customClass="OrderViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ADJ-ka-IVP"/>
                         <viewControllerLayoutGuide type="bottom" id="bXk-dM-p3g"/>
@@ -1076,7 +1076,7 @@
         <!--Favor View Controller-->
         <scene sceneID="yId-ln-HFV">
             <objects>
-                <viewController id="Ood-4W-7AY" customClass="FavorViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ood-4W-7AY" customClass="FavorViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="44m-Ep-SYC"/>
                         <viewControllerLayoutGuide type="bottom" id="L2e-7b-QFA"/>
@@ -1131,7 +1131,7 @@
         <!--Integration View Controller-->
         <scene sceneID="Dpi-qD-G0G">
             <objects>
-                <viewController id="ge0-nA-2VP" customClass="IntegrationViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ge0-nA-2VP" customClass="IntegrationViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RB6-9q-tNA"/>
                         <viewControllerLayoutGuide type="bottom" id="XUp-Yg-SmL"/>
@@ -1196,7 +1196,7 @@
         <!--Voucher View Controller-->
         <scene sceneID="Kdd-Rp-kGw">
             <objects>
-                <viewController id="1xF-kk-WDd" customClass="VoucherViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1xF-kk-WDd" customClass="VoucherViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r9R-k0-Fbs"/>
                         <viewControllerLayoutGuide type="bottom" id="gac-3v-swl"/>
@@ -1281,7 +1281,7 @@
         <!--System Config View Controller-->
         <scene sceneID="YHf-Tk-D3V">
             <objects>
-                <viewController id="sSY-Da-Z6f" customClass="SystemConfigViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sSY-Da-Z6f" customClass="SystemConfigViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wlq-41-TxO"/>
                         <viewControllerLayoutGuide type="bottom" id="dkZ-Ji-E2l"/>
@@ -1497,7 +1497,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="缓存占用：25M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqX-kR-KYh">
-                                                    <rect key="frame" x="28" y="11" width="92.5" height="21"/>
+                                                    <rect key="frame" x="28" y="11" width="93" height="21"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="yJq-me-YoM"/>
@@ -1544,7 +1544,9 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="GNP-pQ-v6R"/>
                                                     </constraints>
-                                                    <state key="normal" title="退出登录"/>
+                                                    <state key="normal" title="退出登录">
+                                                        <color key="titleColor" red="1" green="0.0" blue="0.037066020673091948" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
                                                 </button>
                                             </subviews>
                                             <animations/>
@@ -1572,7 +1574,7 @@
         <!--User Table View Controller-->
         <scene sceneID="MVa-96-3cQ">
             <objects>
-                <tableViewController id="ygI-7l-vfb" customClass="UserTableViewController" customModule="DotnarDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ygI-7l-vfb" customClass="UserTableViewController" customModule="庄主商圈" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="3tP-7P-dop">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="443"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1608,7 +1610,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right4" translatesAutoresizingMaskIntoConstraints="NO" id="C6H-8L-wje">
-                                                    <rect key="frame" x="562" y="16" width="10" height="17.5"/>
+                                                    <rect key="frame" x="562" y="16" width="10" height="18"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="2kY-Db-zhL"/>
@@ -1665,7 +1667,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right4" translatesAutoresizingMaskIntoConstraints="NO" id="I9X-4W-R0a">
-                                                    <rect key="frame" x="562" y="16" width="10" height="17.5"/>
+                                                    <rect key="frame" x="562" y="16" width="10" height="18"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="10" id="DN1-dX-VtV"/>
@@ -1722,7 +1724,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right4" translatesAutoresizingMaskIntoConstraints="NO" id="ZCf-OC-lc4">
-                                                    <rect key="frame" x="562" y="16" width="10" height="17.5"/>
+                                                    <rect key="frame" x="562" y="16" width="10" height="18"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="0t0-DE-RZu"/>
@@ -1779,7 +1781,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right4" translatesAutoresizingMaskIntoConstraints="NO" id="TXj-oH-u8v">
-                                                    <rect key="frame" x="562" y="16" width="10" height="17.5"/>
+                                                    <rect key="frame" x="562" y="16" width="10" height="18"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="3CN-cJ-qtR"/>
@@ -1836,7 +1838,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right4" translatesAutoresizingMaskIntoConstraints="NO" id="bDJ-ry-v2L">
-                                                    <rect key="frame" x="562" y="16" width="10" height="17.5"/>
+                                                    <rect key="frame" x="562" y="16" width="10" height="18"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="Gur-hi-lAU"/>
@@ -1890,7 +1892,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right4" translatesAutoresizingMaskIntoConstraints="NO" id="WC0-be-V0D">
-                                                    <rect key="frame" x="562" y="16" width="10" height="17.5"/>
+                                                    <rect key="frame" x="562" y="16" width="10" height="18"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="10" id="ich-sa-Ssb"/>
@@ -1960,7 +1962,7 @@
         <image name="SMS" width="28" height="26"/>
         <image name="avocado" width="24" height="30"/>
         <image name="contacts" width="24" height="27"/>
-        <image name="g1" width="600" height="600"/>
+        <image name="g1" width="150" height="150"/>
         <image name="gps_searching" width="27" height="31"/>
         <image name="head1" width="200" height="200"/>
         <image name="home" width="30" height="30"/>

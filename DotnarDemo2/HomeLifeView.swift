@@ -20,12 +20,12 @@ class HomeLifeView: UIView {
     }
     
     func addImage(image:UIImageView){
-        let width = UIScreen.mainScreen().bounds.width / 4
+        let width = UIScreen.mainScreen().bounds.width / 3
         var height = 0
-        if images.count >= 4{
-            height = Int(width)
+        if images.count >= 3{
+            height = Int(width) * Int(images.count / 3)
         }
-        image.frame = CGRectMake(CGFloat(images.count % 4) * CGFloat(width), CGFloat(height), CGFloat(width), CGFloat(width))
+        image.frame = CGRectMake(CGFloat(images.count % 3) * CGFloat(width), CGFloat(height), CGFloat(width), CGFloat(width))
         image.layer.borderWidth = 1
         image.layer.borderColor = UIColor.whiteColor().CGColor
         images.append(image)
