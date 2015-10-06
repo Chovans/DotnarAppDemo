@@ -9,3 +9,6 @@ func test(a:Int)(b:Int) -> Bool{
     print(b)
     return a > b
 }
+
+
+let test1 = (1...7).flatMap{print("结果\($0)")}

@@ -78,7 +78,7 @@ class ShopViewController: UIViewController {
         activity.frame.origin = CGPoint(x: (UIScreen.mainScreen().bounds.width - 20 ) / 2, y: (contentView.bounds.height - 20) / 2)
         contentView.addSubview(activity)
         
-        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "showDetail:", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "showDetail:", userInfo: nil, repeats: false)
        
     }
     

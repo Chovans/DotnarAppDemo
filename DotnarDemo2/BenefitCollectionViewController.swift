@@ -18,13 +18,16 @@ class BenefitCollectionViewController: UICollectionViewController {
 //        collectionView?.delegate = self
 //        collectionView?.dataSource = self
 //        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
+        
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -45,7 +48,7 @@ class BenefitCollectionViewController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 20
+        return 7
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -54,8 +57,15 @@ class BenefitCollectionViewController: UICollectionViewController {
         cell.layer.borderWidth = 1
         cell.layer.cornerRadius = 2
         
+//        let goodsNum = Int(arc4random_uniform(7)) + 1
         let randomMath = Float(arc4random_uniform(10))
-        let randomPrice = Float(arc4random_uniform(1000))
+        let randomPrice = Float(arc4random_uniform(100))
+        
+        let picture = cell.viewWithTag(1) as! UIImageView
+        picture.image = UIImage(named: "g\(indexPath.row + 1)")
+        
+        let name = cell.viewWithTag(2) as! UILabel
+        name.text = "商品（促销 \(indexPath.row + 1)）"
         
         let progress = cell.viewWithTag(3) as! UIProgressView
         progress.progress = Float(randomMath / 10)
@@ -73,17 +83,26 @@ class BenefitCollectionViewController: UICollectionViewController {
         buyButton.layer.borderColor = UIColor.orangeColor().CGColor
         buyButton.layer.cornerRadius = 3
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: Selector("go2Detail:"))
+        picture.addGestureRecognizer(tapGesture)
+        
         return cell
     }
     
     func collectionView(collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout,sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize{
         let width = (UIScreen.mainScreen().bounds.width - 30) / 2
         let height = (width - 16) * 3 / 2 + 80
+        
         return CGSize(width:width, height: height)
     }
 
+    func go2Detail(sender:AnyObject){
+//        let detailView = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("goodsDetail")
+//        self.view.addSubview(detailView.view)
+    }
+    
     @IBAction func testClick(sender: UIButton) {
-        print("test")
+        
     }
     // MARK: UICollectionViewDelegate
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE733A611BC377A900EFE8E6 /* FindDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE733A601BC377A900EFE8E6 /* FindDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CEBC2B741BB071B7000C89A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2B731BB071B7000C89A2 /* AppDelegate.swift */; };
 		CEBC2B761BB071B7000C89A2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2B751BB071B7000C89A2 /* HomeViewController.swift */; };
 		CEBC2B791BB071B7000C89A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC2B771BB071B7000C89A2 /* Main.storyboard */; };
@@ -23,6 +24,12 @@
 		CEE0CDB31BB45202006EF24B /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDB21BB45202006EF24B /* FindViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CEE0CDB61BB4F221006EF24B /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDB51BB4F221006EF24B /* OrderViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CEE0CDB91BB4FE78006EF24B /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDB81BB4FE78006EF24B /* ShopViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CEEE471E1BC3564600DD890C /* FavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE471D1BC3564600DD890C /* FavorViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CEEE47201BC3571700DD890C /* IntegrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE471F1BC3571700DD890C /* IntegrationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CEEE47221BC359D700DD890C /* VoucherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE47211BC359D700DD890C /* VoucherViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CEEE47241BC3603500DD890C /* SystemConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE47231BC3603500DD890C /* SystemConfigViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CEEE47281BC36C2C00DD890C /* OrderConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE47271BC36C2C00DD890C /* OrderConfirmViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CEEE472A1BC3710C00DD890C /* GoodsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE47291BC3710C00DD890C /* GoodsDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE733A601BC377A900EFE8E6 /* FindDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindDetailViewController.swift; sourceTree = "<group>"; };
 		CEBC2B701BB071B7000C89A2 /* DotnarDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotnarDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBC2B731BB071B7000C89A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBC2B751BB071B7000C89A2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +74,12 @@
 		CEE0CDB21BB45202006EF24B /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		CEE0CDB51BB4F221006EF24B /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		CEE0CDB81BB4FE78006EF24B /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		CEEE471D1BC3564600DD890C /* FavorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavorViewController.swift; sourceTree = "<group>"; };
+		CEEE471F1BC3571700DD890C /* IntegrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegrationViewController.swift; sourceTree = "<group>"; };
+		CEEE47211BC359D700DD890C /* VoucherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoucherViewController.swift; sourceTree = "<group>"; };
+		CEEE47231BC3603500DD890C /* SystemConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemConfigViewController.swift; sourceTree = "<group>"; };
+		CEEE47271BC36C2C00DD890C /* OrderConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderConfirmViewController.swift; sourceTree = "<group>"; };
+		CEEE47291BC3710C00DD890C /* GoodsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +186,7 @@
 				CEBC2B751BB071B7000C89A2 /* HomeViewController.swift */,
 				CEE0CDAD1BB2B54F006EF24B /* UserViewController.swift */,
 				CEE0CDB21BB45202006EF24B /* FindViewController.swift */,
+				CE733A601BC377A900EFE8E6 /* FindDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -197,6 +212,10 @@
 			isa = PBXGroup;
 			children = (
 				CEE0CDB51BB4F221006EF24B /* OrderViewController.swift */,
+				CEEE471D1BC3564600DD890C /* FavorViewController.swift */,
+				CEEE471F1BC3571700DD890C /* IntegrationViewController.swift */,
+				CEEE47211BC359D700DD890C /* VoucherViewController.swift */,
+				CEEE47231BC3603500DD890C /* SystemConfigViewController.swift */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -206,6 +225,8 @@
 			children = (
 				CEE0CDB81BB4FE78006EF24B /* ShopViewController.swift */,
 				CED649A91BB68FBB004ED4D3 /* BenefitCollectionViewController.swift */,
+				CEEE47271BC36C2C00DD890C /* OrderConfirmViewController.swift */,
+				CEEE47291BC3710C00DD890C /* GoodsDetailViewController.swift */,
 			);
 			name = Shop;
 			sourceTree = "<group>";
@@ -344,16 +365,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBC2BAD1BB14B5C000C89A2 /* MenuItemCollectionViewCell.swift in Sources */,
+				CEEE47221BC359D700DD890C /* VoucherViewController.swift in Sources */,
 				CEE0CDAE1BB2B54F006EF24B /* UserViewController.swift in Sources */,
 				CEE0CDB91BB4FE78006EF24B /* ShopViewController.swift in Sources */,
+				CEEE47201BC3571700DD890C /* IntegrationViewController.swift in Sources */,
 				CED649AA1BB68FBB004ED4D3 /* BenefitCollectionViewController.swift in Sources */,
+				CE733A611BC377A900EFE8E6 /* FindDetailViewController.swift in Sources */,
 				CEBC2B7C1BB071B7000C89A2 /* DotnarDemo2.xcdatamodeld in Sources */,
 				CEE0CDB31BB45202006EF24B /* FindViewController.swift in Sources */,
+				CEEE47281BC36C2C00DD890C /* OrderConfirmViewController.swift in Sources */,
 				CEBC2B761BB071B7000C89A2 /* HomeViewController.swift in Sources */,
 				CEE0CDB11BB3BBED006EF24B /* UserTableViewController.swift in Sources */,
 				CEE0CDAC1BB2A5D3006EF24B /* HomeLifeView.swift in Sources */,
+				CEEE47241BC3603500DD890C /* SystemConfigViewController.swift in Sources */,
+				CEEE471E1BC3564600DD890C /* FavorViewController.swift in Sources */,
 				CEBC2B741BB071B7000C89A2 /* AppDelegate.swift in Sources */,
 				CEE0CDB61BB4F221006EF24B /* OrderViewController.swift in Sources */,
+				CEEE472A1BC3710C00DD890C /* GoodsDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +523,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DotnarDemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dotnar.DotnarDemo2;
@@ -506,6 +536,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DotnarDemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dotnar.DotnarDemo2;

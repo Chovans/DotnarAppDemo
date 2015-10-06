@@ -134,6 +134,9 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UICollectionView
     
     //MARK : Banner
     
+    @IBAction func go2ShopView(sender: AnyObject) {
+        self.tabBarController?.selectedIndex = 2
+    }
     func initBanner(){
         
         
