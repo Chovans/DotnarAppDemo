@@ -17,6 +17,7 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     ("MainPicture1.png","load5.png","滴滴送酒——火爆开启！","299","2015-10-10")]
 
     @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var areaButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,7 +29,28 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
 //        tableview.rowHeight = UITableViewAutomaticDimension
         tableview.estimatedRowHeight = 100
-//         Do any additional setup after loading the view.
+        
+        areaButton.layer.cornerRadius = 5
+
+    }
+    var splitCommon = UIViewController()
+    @IBAction func showSplitView(sender: UIButton) {
+//        let _view = UIView(frame: CGRect(x: 0, y: 100, width: view.bounds.width, height: 0))
+//        _view.backgroundColor = UIColor.redColor()
+//        view.addSubview(_view)
+        splitCommon.view.removeFromSuperview()
+        
+        splitCommon = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("splitCommon")
+        splitCommon.view.frame = CGRect(x: 0, y: 100, width: view.bounds.width, height: 0)
+        splitCommon.view.layer.borderWidth = 1
+        splitCommon.view.clipsToBounds = true
+        
+        view.addSubview(splitCommon.view)
+        addChildViewController(splitCommon)
+        
+        UIView.animateWithDuration(1) { () -> Void in
+            self.splitCommon.view.frame = CGRect(x: 0, y: 100, width: self.view.bounds.width, height: self.view.bounds.height / 2)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,20 +60,6 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        
-        let mainPicture = cell.viewWithTag(1) as! UIImageView
-        let headPicture = cell.viewWithTag(2) as! UIImageView
-        let title = cell.viewWithTag(3) as! UILabel
-        let mon = cell.viewWithTag(4) as! UILabel
-        let date = cell.viewWithTag(5) as! UILabel
-        
-        mainPicture.image = UIImage(named: data[indexPath.row].0)
-        headPicture.image = UIImage(named: data[indexPath.row].1)
-        title.text = data[indexPath.row].2
-        mon.text = data[indexPath.row].3
-        date.text = data[indexPath.row].4
-        
-        
         return cell
     }
     

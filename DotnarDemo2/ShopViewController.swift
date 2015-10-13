@@ -19,6 +19,7 @@ class ShopViewController: UIViewController {
     
     @IBOutlet weak var contentView: UIView!
     
+    //选中时颜色
     let selectColor = UIColor(r:72,g:130,b:251,a:1)
     
     override func viewDidLoad() {
@@ -27,7 +28,9 @@ class ShopViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        //设置segmented样式
         tabButtonLayer()
+        //选中segument操作 -> 切换内容
         selectTabBarAction(tab1Button)
     }
 
@@ -37,7 +40,9 @@ class ShopViewController: UIViewController {
     
     
     func tabButtonLayer(){
+        //重置默认（默认不选择时的样式）
         tabButtonDefaultStyle()
+        //设置选择的样式
         tab1Button.backgroundColor = selectColor
         tab1Button.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         
@@ -78,7 +83,8 @@ class ShopViewController: UIViewController {
         activity.frame.origin = CGPoint(x: (UIScreen.mainScreen().bounds.width - 20 ) / 2, y: (contentView.bounds.height - 20) / 2)
         contentView.addSubview(activity)
         
-        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "showDetail:", userInfo: nil, repeats: false)
+        //延时动画，模拟网络加载
+        NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "showDetail:", userInfo: nil, repeats: false)
        
     }
     

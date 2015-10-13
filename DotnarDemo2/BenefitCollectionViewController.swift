@@ -27,16 +27,6 @@ class BenefitCollectionViewController: UICollectionViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     // MARK: UICollectionViewDataSource
 
@@ -61,34 +51,42 @@ class BenefitCollectionViewController: UICollectionViewController {
         let randomMath = Float(arc4random_uniform(10))
         let randomPrice = Float(arc4random_uniform(100))
         
+        //设置图片
         let picture = cell.viewWithTag(1) as! UIImageView
         picture.image = UIImage(named: "g\(indexPath.row + 1)")
         
+        //设置商品名称
         let name = cell.viewWithTag(2) as! UILabel
         name.text = "商品（促销 \(indexPath.row + 1)）"
         
+        //设置抢购进度条
         let progress = cell.viewWithTag(3) as! UIProgressView
         progress.progress = Float(randomMath / 10)
         
+        //设置促销价
         let newPrice = cell.viewWithTag(4) as! UILabel
         newPrice.text = "\(randomPrice)元"
         
+        //设置原价（比例）
         let oldPrice = cell.viewWithTag(5) as! UILabel
         oldPrice.text = "\(randomMath * randomPrice)元"
         let attributer = NSAttributedString(string: oldPrice.text!, attributes: [NSStrikethroughStyleAttributeName:1])
         oldPrice.attributedText = attributer
         
+        //设置按钮layer样式
         let buyButton = cell.viewWithTag(6) as! UIButton
         buyButton.layer.borderWidth = 1
         buyButton.layer.borderColor = UIColor.orangeColor().CGColor
         buyButton.layer.cornerRadius = 3
         
+        //添加手势 -> 跳转到商品详情页
         let tapGesture = UITapGestureRecognizer(target: self, action: Selector("go2Detail:"))
         picture.addGestureRecognizer(tapGesture)
         
         return cell
     }
     
+    //重新设置单元格大小
     func collectionView(collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout,sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize{
         let width = (UIScreen.mainScreen().bounds.width - 30) / 2
         let height = (width - 16) * 3 / 2 + 80
@@ -96,9 +94,11 @@ class BenefitCollectionViewController: UICollectionViewController {
         return CGSize(width:width, height: height)
     }
 
+    //跳转至商品详情页
     func go2Detail(sender:AnyObject){
-//        let detailView = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("goodsDetail")
-//        self.view.addSubview(detailView.view)
+        let detailView = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("goodsDetail")
+//        view.superview?.addSubview(detailView.view)
+        self.presentViewController(detailView, animated: true, completion: nil)
     }
     
     @IBAction func testClick(sender: UIButton) {

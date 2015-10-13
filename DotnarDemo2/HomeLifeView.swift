@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeLifeView: UIView {
-    var images = [UIImageView]()
+    internal var images = [UIImageView]()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -17,6 +17,7 @@ class HomeLifeView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         backgroundColor = UIColor.whiteColor()
+        userInteractionEnabled = true
     }
     
     func addImage(image:UIImageView){
@@ -31,5 +32,6 @@ class HomeLifeView: UIView {
         images.append(image)
         addSubview(image)
     }
+
     
 }

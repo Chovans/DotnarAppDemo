@@ -68,20 +68,25 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UICollectionView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //        let x = (UIScreen.mainScreen().bounds.width - mainImageControl.frame.width ) / 2
-        //        let y = (60 + Carousel.frame.height - mainImageControl.frame.height - 10 )
+        NSTimer.scheduledTimerWithTimeInterval(4, target: self, selector: Selector("nextImage:"), userInfo: nil, repeats: true)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
         let x = 0
         let y = 10
         mainImageControl.numberOfPages = 4
         mainImageControl.frame = CGRect(origin: CGPoint(x: x, y: y), size: mainImageControl.frame.size)
         
-        let imageWidth = UIScreen.mainScreen().bounds.width
+        let imageWidth = Carousel.bounds.width
         //宽高比3：1
         let imageHeight = UIScreen.mainScreen().bounds.width / 3
         
         for idx in 0...3{
             let image = UIImage(named: "MainPicture\(idx + 1)")
             let imageView = UIImageView(image: image)
+            imageView.contentMode = UIViewContentMode.ScaleAspectFit
             imageView.frame = CGRectMake(imageWidth * CGFloat(idx), 0, imageWidth, imageHeight)
             /*  根据父级窗口改变大小？  calls sizeThatFits: with current view bounds and changes bounds size  */
             imageView.sizeToFit()
@@ -95,12 +100,11 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UICollectionView
         Carousel.pagingEnabled = true
         Carousel.delegate = self
         
-        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("nextImage:"), userInfo: nil, repeats: true)
+        
         
         menuItemCollection.delegate = self
         menuItemCollection.dataSource = self
         menuItemCollection.backgroundColor = UIColor.whiteColor()
-        
     }
     
     
@@ -118,7 +122,7 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UICollectionView
         mainImageControl.currentPage = page
         
         UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-            self.Carousel.contentOffset = CGPoint(x: CGFloat(page) * UIScreen.mainScreen().bounds.width, y: 0)
+            self.Carousel.contentOffset = CGPoint(x: CGFloat(page) * self.Carousel.bounds.width, y: 0)
             }, completion: nil)
         
     }
@@ -128,8 +132,20 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UICollectionView
     func initLifeView(){
         homeLifeView.images.removeAll()
         for idx in 1...21{
-            homeLifeView.addImage(UIImageView(image: UIImage(named: "g\(idx).jpeg")))
+            let image =  UIImage(named: "g\(idx).jpeg");
+            let imageView = UIImageView(image:image)
+            let tapGuesture = UITapGestureRecognizer(target: self, action: Selector("go2GoodsDetail:"))
+            
+            imageView.addGestureRecognizer(tapGuesture)
+            imageView.userInteractionEnabled = true
+            homeLifeView.addImage(imageView)
+            
         }
+    }
+    
+    func go2GoodsDetail(sender:AnyObject){
+        let detailView = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("goodsDetail")
+        presentViewController(detailView, animated: true, completion: nil)
     }
     
     //MARK : Banner
@@ -204,17 +220,18 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UICollectionView
         
         cell._view.layer.cornerRadius = r
         cell._view.layer.borderWidth = 1
+        
         cell._view.layer.borderColor = UIColor(r: data.red, g: data.green, b: data.blue, a: 1).CGColor
         cell._view.layer.masksToBounds = true
         
         //跳转
-        if indexPath.row == 0 || indexPath.row == 1 || indexPath.row == 4 || indexPath.row == 6 || indexPath.row == 7 {
+        if indexPath.row == 0 || indexPath.row == 1 || indexPath.row == 4 || indexPath.row == 7 {
             let tapGuesture = UITapGestureRecognizer(target: self, action: Selector("go2Shop:"))
             cell.addGestureRecognizer(tapGuesture)
         }else if indexPath.row == 3 {
             let tapGuesture = UITapGestureRecognizer(target: self, action: Selector("go2User:"))
             cell.addGestureRecognizer(tapGuesture)
-        }else if indexPath.row == 2 {
+        }else if indexPath.row == 6 {
             let tapGuesture = UITapGestureRecognizer(target: self, action: Selector("go2Baidu:"))
             cell.addGestureRecognizer(tapGuesture)
         }
@@ -239,5 +256,35 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UICollectionView
         return CGSize(width:width, height: width * 6 / 5)
     }
     
+    var _view = UIView()
+    var _imageView = UIImageView()
+    @IBAction func qrAction(sender: UIButton) {
+        _view = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: view.bounds.height))
+        _view.backgroundColor = UIColor(r: 0, g: 0, b: 0, a: 0.8)
+        _imageView = UIImageView(image: UIImage(named: "recode1"))
+        _imageView.frame = CGRect(x: view.frame.width / 4, y:view.frame.height / 4, width: 0, height: view.frame.width / 2)
+        _imageView.contentMode = UIViewContentMode.ScaleToFill
+        _view.addSubview(_imageView)
+        
+        view.addSubview(_view)
+        
+        _view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("clear:")))
+        
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 7, initialSpringVelocity: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+                self._view.frame = self.view.frame
+            self._imageView.frame = CGRect(x: self.view.frame.width / 4, y: self.view.frame.height / 4, width: self.view.frame.width / 2, height: self.view.frame.width / 2)
+            }) { (finish) -> Void in
+        }
+    }
+    
+    func clear(sender:AnyObject){
+        
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 6, initialSpringVelocity: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+            self._view.frame = CGRect(x: 0, y: 0, width: 0, height: self.view.bounds.height)
+            self._imageView.frame = CGRect(x: 0, y: self._imageView.frame.origin.y, width: 0, height: self._imageView.bounds.height)
+            }) { (finish) -> Void in
+                self._view.removeFromSuperview()
+        }
+    }
 }
 
