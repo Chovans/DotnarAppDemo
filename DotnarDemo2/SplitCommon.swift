@@ -19,22 +19,25 @@ class SplitCommon: UIViewController,UITableViewDataSource,UITableViewDelegate {
         leftTableView.dataSource = self
         rightTableView.delegate = self
         rightTableView.dataSource = self
-        // Do any additional setup after loading the view.
-        view.translatesAutoresizingMaskIntoConstraints = true
+        
+//        view.translatesAutoresizingMaskIntoConstraints = true
         reloadViews()
     }
 
     func reloadViews(){
-        let screenWidth = UIScreen.mainScreen().bounds.width
-        leftTableView.frame = CGRect(x: 0, y: 0, width: screenWidth / 3 , height: view.frame.height)
-        rightTableView.frame = CGRect(x: screenWidth / 3, y: 0, width: screenWidth / 3 * 2, height: view.frame.height)
+//        let screenWidth = UIScreen.mainScreen().bounds.width
+//        leftTableView.frame = CGRect(x: 0, y: 0, width: screenWidth / 3 , height: view.frame.height)
+//        rightTableView.frame = CGRect(x: screenWidth / 3, y: 0, width: screenWidth / 3 * 2, height: view.frame.height)
         
-        view.needsUpdateConstraints()
-        view.sizeToFit()
-        
+//        view.needsUpdateConstraints()
+        view.layoutIfNeeded()
     }
 
 
+    override func viewDidLayoutSubviews() {
+        view.layoutIfNeeded()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

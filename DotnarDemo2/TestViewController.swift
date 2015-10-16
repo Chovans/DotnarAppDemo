@@ -9,51 +9,35 @@
 
 import UIKit
 
-class TestViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
-    @IBOutlet weak var tableView: UITableView!
+class TestViewController: UIViewController {
+    
+    @IBOutlet weak var testView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        let headerView = UIScrollView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 100))
-        headerView.contentSize = CGSize(width: headerView.frame.width * 10, height: 1000)
-
-        tableView.tableHeaderView = headerView
-        
-        
-        tableView.tableFooterView = UIView()
-        // Do any additional setup after loading the view.
     }
-
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        testView.frame = CGRect(x: 100, y: 100, width: 100, height: 2)
+        UIView.animateWithDuration(1) { () -> Void in
+            self.testView.transform = CGAffineTransformMakeTranslation(100, 0)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

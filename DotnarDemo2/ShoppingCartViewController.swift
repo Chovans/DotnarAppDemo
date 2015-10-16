@@ -22,6 +22,7 @@ class ShoppingCartViewController: UIViewController,UITableViewDataSource,UITable
 //        tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         
         buttonStyle(allRadioImage)
+        allRadioImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("allRadioSelectAction:")))
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +42,10 @@ class ShoppingCartViewController: UIViewController,UITableViewDataSource,UITable
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
+    }
+    
+    func allRadioSelectAction(sender:AnyObject){
+        selectAllAction(allRadioImage)
     }
     
     //全选按钮

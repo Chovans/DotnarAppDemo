@@ -25,6 +25,12 @@
 		CEBC2BAD1BB14B5C000C89A2 /* MenuItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2BAC1BB14B5C000C89A2 /* MenuItemCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		CED649AA1BB68FBB004ED4D3 /* BenefitCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED649A91BB68FBB004ED4D3 /* BenefitCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CEDFB58F1BCCE18B00D87497 /* SplitCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFB58E1BCCE18B00D87497 /* SplitCommon.swift */; settings = {ASSET_TAGS = (); }; };
+		CEDFB5911BCE140000D87497 /* SplitCommon2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFB5901BCE140000D87497 /* SplitCommon2.swift */; settings = {ASSET_TAGS = (); }; };
+		CEDFB5931BCE235500D87497 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = CEDFB5921BCE235500D87497 /* city.json */; settings = {ASSET_TAGS = (); }; };
+		CEDFB5A61BCE243E00D87497 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDFB59D1BCE243000D87497 /* SwiftyJSON.framework */; };
+		CEDFB5A71BCE243E00D87497 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEDFB59D1BCE243000D87497 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEDFB5AC1BCE484500D87497 /* classification.json in Resources */ = {isa = PBXBuildFile; fileRef = CEDFB5AB1BCE484500D87497 /* classification.json */; settings = {ASSET_TAGS = (); }; };
+		CEDFB5AE1BD0A1B400D87497 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFB5AD1BD0A1B400D87497 /* Common.swift */; settings = {ASSET_TAGS = (); }; };
 		CEE0CDAC1BB2A5D3006EF24B /* HomeLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDAB1BB2A5D3006EF24B /* HomeLifeView.swift */; settings = {ASSET_TAGS = (); }; };
 		CEE0CDAE1BB2B54F006EF24B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDAD1BB2B54F006EF24B /* UserViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CEE0CDB11BB3BBED006EF24B /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDB01BB3BBED006EF24B /* UserTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -54,7 +60,63 @@
 			remoteGlobalIDString = CEBC2B6F1BB071B7000C89A2;
 			remoteInfo = DotnarDemo2;
 		};
+		CEDFB59C1BCE243000D87497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDFB5941BCE243000D87497 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		CEDFB59E1BCE243000D87497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDFB5941BCE243000D87497 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = "SwiftyJSON iOS Tests";
+		};
+		CEDFB5A01BCE243000D87497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDFB5941BCE243000D87497 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX";
+		};
+		CEDFB5A21BCE243000D87497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDFB5941BCE243000D87497 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX Tests";
+		};
+		CEDFB5A41BCE243000D87497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDFB5941BCE243000D87497 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4D7CCE81B9465A700EE7221;
+			remoteInfo = "SwiftyJSON watchOS";
+		};
+		CEDFB5A81BCE243E00D87497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDFB5941BCE243000D87497 /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEDFB5AA1BCE243F00D87497 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CEDFB5A71BCE243E00D87497 /* SwiftyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CE6B82161BC7652C005D5149 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +143,11 @@
 		CEBC2BAC1BB14B5C000C89A2 /* MenuItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		CED649A91BB68FBB004ED4D3 /* BenefitCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitCollectionViewController.swift; sourceTree = "<group>"; };
 		CEDFB58E1BCCE18B00D87497 /* SplitCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitCommon.swift; sourceTree = "<group>"; };
+		CEDFB5901BCE140000D87497 /* SplitCommon2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitCommon2.swift; sourceTree = "<group>"; };
+		CEDFB5921BCE235500D87497 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		CEDFB5941BCE243000D87497 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../../../Downloads/SwiftyJSON-master 2/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
+		CEDFB5AB1BCE484500D87497 /* classification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = classification.json; sourceTree = "<group>"; };
+		CEDFB5AD1BD0A1B400D87497 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		CEE0CDAB1BB2A5D3006EF24B /* HomeLifeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLifeView.swift; sourceTree = "<group>"; };
 		CEE0CDAD1BB2B54F006EF24B /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		CEE0CDAF1BB2BAD5006EF24B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
@@ -101,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDFB5A61BCE243E00D87497 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,9 +252,11 @@
 		CEBC2BA41BB071C2000C89A2 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				CEDFB5921BCE235500D87497 /* city.json */,
 				CEBC2B731BB071B7000C89A2 /* AppDelegate.swift */,
 				CEBC2B7D1BB071B7000C89A2 /* Assets.xcassets */,
 				CEBC2B821BB071B7000C89A2 /* Info.plist */,
+				CEDFB5AB1BCE484500D87497 /* classification.json */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -221,6 +291,7 @@
 				CEBC2BAC1BB14B5C000C89A2 /* MenuItemCollectionViewCell.swift */,
 				CEE0CDAB1BB2A5D3006EF24B /* HomeLifeView.swift */,
 				CEE0CDB01BB3BBED006EF24B /* UserTableViewController.swift */,
+				CEDFB5AD1BD0A1B400D87497 /* Common.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -228,6 +299,7 @@
 		CEBC2BAE1BB15EAE000C89A2 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				CEDFB5941BCE243000D87497 /* SwiftyJSON.xcodeproj */,
 			);
 			name = 3rd;
 			sourceTree = "<group>";
@@ -238,8 +310,21 @@
 				CEE0CDB21BB45202006EF24B /* FindViewController.swift */,
 				CE733A601BC377A900EFE8E6 /* FindDetailViewController.swift */,
 				CEDFB58E1BCCE18B00D87497 /* SplitCommon.swift */,
+				CEDFB5901BCE140000D87497 /* SplitCommon2.swift */,
 			);
 			name = Find;
+			sourceTree = "<group>";
+		};
+		CEDFB5951BCE243000D87497 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEDFB59D1BCE243000D87497 /* SwiftyJSON.framework */,
+				CEDFB59F1BCE243000D87497 /* SwiftyJSON iOS Tests.xctest */,
+				CEDFB5A11BCE243000D87497 /* SwiftyJSON.framework */,
+				CEDFB5A31BCE243000D87497 /* SwiftyJSON OSX Tests.xctest */,
+				CEDFB5A51BCE243000D87497 /* SwiftyJSON.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CEE0CDB41BB4F210006EF24B /* User */ = {
@@ -278,10 +363,12 @@
 				CEBC2B6C1BB071B7000C89A2 /* Sources */,
 				CEBC2B6D1BB071B7000C89A2 /* Frameworks */,
 				CEBC2B6E1BB071B7000C89A2 /* Resources */,
+				CEDFB5AA1BCE243F00D87497 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CEDFB5A91BCE243E00D87497 /* PBXTargetDependency */,
 			);
 			name = "易盟商圈";
 			productName = DotnarDemo2;
@@ -360,6 +447,12 @@
 			mainGroup = CEBC2B671BB071B7000C89A2;
 			productRefGroup = CEBC2B711BB071B7000C89A2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CEDFB5951BCE243000D87497 /* Products */;
+					ProjectRef = CEDFB5941BCE243000D87497 /* SwiftyJSON.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CEBC2B6F1BB071B7000C89A2 /* 易盟商圈 */,
@@ -369,6 +462,44 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		CEDFB59D1BCE243000D87497 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = CEDFB59C1BCE243000D87497 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEDFB59F1BCE243000D87497 /* SwiftyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON iOS Tests.xctest";
+			remoteRef = CEDFB59E1BCE243000D87497 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEDFB5A11BCE243000D87497 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = CEDFB5A01BCE243000D87497 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEDFB5A31BCE243000D87497 /* SwiftyJSON OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON OSX Tests.xctest";
+			remoteRef = CEDFB5A21BCE243000D87497 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEDFB5A51BCE243000D87497 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = CEDFB5A41BCE243000D87497 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		CEBC2B6E1BB071B7000C89A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -376,6 +507,8 @@
 			files = (
 				CEBC2B811BB071B7000C89A2 /* LaunchScreen.storyboard in Resources */,
 				CEBC2B7E1BB071B7000C89A2 /* Assets.xcassets in Resources */,
+				CEDFB5AC1BCE484500D87497 /* classification.json in Resources */,
+				CEDFB5931BCE235500D87497 /* city.json in Resources */,
 				CEBC2B791BB071B7000C89A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +538,7 @@
 				CE6B82171BC7652C005D5149 /* TestViewController.swift in Sources */,
 				CEDFB58F1BCCE18B00D87497 /* SplitCommon.swift in Sources */,
 				CEEE47221BC359D700DD890C /* VoucherViewController.swift in Sources */,
+				CEDFB5911BCE140000D87497 /* SplitCommon2.swift in Sources */,
 				CEE0CDAE1BB2B54F006EF24B /* UserViewController.swift in Sources */,
 				CEE0CDB91BB4FE78006EF24B /* ShopViewController.swift in Sources */,
 				CEEE47201BC3571700DD890C /* IntegrationViewController.swift in Sources */,
@@ -413,6 +547,7 @@
 				CE6B82241BCB5E74005D5149 /* ShoppingCartViewController.swift in Sources */,
 				CE6B821D1BC7B32A005D5149 /* ConfirmOrderViewController.swift in Sources */,
 				CE6B821B1BC7A40B005D5149 /* ConfirmOrderTableViewController.swift in Sources */,
+				CEDFB5AE1BD0A1B400D87497 /* Common.swift in Sources */,
 				CEBC2B7C1BB071B7000C89A2 /* DotnarDemo2.xcdatamodeld in Sources */,
 				CEE0CDB31BB45202006EF24B /* FindViewController.swift in Sources */,
 				CE6B82191BC774AD005D5149 /* D3Notice.swift in Sources */,
@@ -457,6 +592,11 @@
 			isa = PBXTargetDependency;
 			target = CEBC2B6F1BB071B7000C89A2 /* 易盟商圈 */;
 			targetProxy = CEBC2B931BB071B7000C89A2 /* PBXContainerItemProxy */;
+		};
+		CEDFB5A91BCE243E00D87497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON iOS";
+			targetProxy = CEDFB5A81BCE243E00D87497 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -569,6 +709,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = DotnarDemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dotnar.DotnarDemo2;
@@ -582,6 +723,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = DotnarDemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dotnar.DotnarDemo2;

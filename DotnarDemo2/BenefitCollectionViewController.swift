@@ -15,9 +15,6 @@ class BenefitCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView?.backgroundColor = UIColor.whiteColor()
-//        collectionView?.delegate = self
-//        collectionView?.dataSource = self
-//        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
     }
     override func didReceiveMemoryWarning() {
@@ -57,7 +54,7 @@ class BenefitCollectionViewController: UICollectionViewController {
         
         //设置商品名称
         let name = cell.viewWithTag(2) as! UILabel
-        name.text = "商品（促销 \(indexPath.row + 1)）"
+        name.text = "滴滴送酒促销商品（促销 \(indexPath.row + 1)）"
         
         //设置抢购进度条
         let progress = cell.viewWithTag(3) as! UIProgressView

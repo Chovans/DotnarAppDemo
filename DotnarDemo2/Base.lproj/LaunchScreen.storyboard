@@ -27,6 +27,7 @@
                             </imageView>
                         </subviews>
                         <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="geH-2z-kfa" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0sG-Tm-Lyu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="geH-2z-kfa" secondAttribute="trailing" constant="160" id="64e-86-ti5"/>
