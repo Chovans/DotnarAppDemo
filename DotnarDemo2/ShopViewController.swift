@@ -18,12 +18,14 @@ class ShopViewController: UIViewController {
     @IBOutlet weak var tab4Button: UIButton!
     
     @IBOutlet weak var contentView: UIView!
-    
+    @IBOutlet weak var menuBackView: UIView!
     //选中时颜色
     let selectColor = UIColor(r:72,g:130,b:251,a:1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        menuBackView.layer.borderWidth = 1
+        menuBackView.layer.borderColor = UIColor(r: 222, g: 222, b: 222, a: 0.8).CGColor
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -87,6 +89,47 @@ class ShopViewController: UIViewController {
         NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "showDetail:", userInfo: nil, repeats: false)
        
     }
+    
+    let sv = SplitCommon2()
+    
+    var currentButton = UIButton()
+    @IBAction func menuAction(sender: UIButton) {
+        sv.view.removeFromSuperview()
+        sv.removeFromParentViewController()
+        currentButton = sender
+        
+        if sender.titleForState(UIControlState.Normal) == "全城" {
+            sv.getMenuType("city.json")
+        }else{
+            sv.getMenuType("classification.json")
+        }
+        
+        sv.view.frame = CGRect(x: 0, y: 100, width: view.bounds.width, height: 0)
+        sv.view.clipsToBounds = true
+        sv.view.alpha = 0.0
+        
+        view.addSubview(sv.view)
+        addChildViewController(sv)
+        
+        
+        UIView.animateWithDuration(0.5) { () -> Void in
+            self.sv.view.frame = CGRect(x: 0, y: 100, width: self.view.bounds.width, height: self.view.bounds.height)
+            self.sv.view.alpha = 1.0
+        }
+
+    }
+    
+    func getCity(city:String){
+        sv.view.removeFromSuperview()
+        sv.removeFromParentViewController()
+//        areaButton.setTitle(city, forState: UIControlState.Normal)
+    }
+    
+    func getResult(result:String) {
+        currentButton.setTitle(result, forState: UIControlState.Normal)
+    }
+
+    
     
     func showDetail(sender:AnyObject){
         

@@ -11,12 +11,15 @@ import UIKit
 class VoucherViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var navigationBar: UINavigationBar!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
         self.clearFooterLine()
+        
+        navigationBar.topItem?.title = "抵用券(2张)"
     }
 
     func clearFooterLine(){

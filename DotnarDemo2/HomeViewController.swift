@@ -240,7 +240,9 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UICollectionView
     }
     
     func go2Baidu(sender:AnyObject){
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.dotnar.com/")!)
+//        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.dotnar.com/")!)
+        let businessControl = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("businessWebView")
+        presentViewController(businessControl, animated: true, completion: nil)
     }
     
     func go2Shop(sender:AnyObject){

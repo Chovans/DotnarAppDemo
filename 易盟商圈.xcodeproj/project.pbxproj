@@ -14,6 +14,7 @@
 		CE6B821F1BC8D6E8005D5149 /* PayPageSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B821E1BC8D6E8005D5149 /* PayPageSegmentedControl.swift */; settings = {ASSET_TAGS = (); }; };
 		CE6B82241BCB5E74005D5149 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B82231BCB5E74005D5149 /* ShoppingCartViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CE733A611BC377A900EFE8E6 /* FindDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE733A601BC377A900EFE8E6 /* FindDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CEAFC3281BD0E9610051D534 /* FavorViewControllerBak.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAFC3271BD0E9610051D534 /* FavorViewControllerBak.swift */; settings = {ASSET_TAGS = (); }; };
 		CEBC2B741BB071B7000C89A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2B731BB071B7000C89A2 /* AppDelegate.swift */; };
 		CEBC2B761BB071B7000C89A2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC2B751BB071B7000C89A2 /* HomeViewController.swift */; };
 		CEBC2B791BB071B7000C89A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC2B771BB071B7000C89A2 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		CEDFB5A71BCE243E00D87497 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEDFB59D1BCE243000D87497 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEDFB5AC1BCE484500D87497 /* classification.json in Resources */ = {isa = PBXBuildFile; fileRef = CEDFB5AB1BCE484500D87497 /* classification.json */; settings = {ASSET_TAGS = (); }; };
 		CEDFB5AE1BD0A1B400D87497 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFB5AD1BD0A1B400D87497 /* Common.swift */; settings = {ASSET_TAGS = (); }; };
+		CEDFB5B01BD0C01000D87497 /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFB5AF1BD0C01000D87497 /* BusinessViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CEE0CDAC1BB2A5D3006EF24B /* HomeLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDAB1BB2A5D3006EF24B /* HomeLifeView.swift */; settings = {ASSET_TAGS = (); }; };
 		CEE0CDAE1BB2B54F006EF24B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDAD1BB2B54F006EF24B /* UserViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CEE0CDB11BB3BBED006EF24B /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CDB01BB3BBED006EF24B /* UserTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -126,6 +128,7 @@
 		CE6B821E1BC8D6E8005D5149 /* PayPageSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayPageSegmentedControl.swift; sourceTree = "<group>"; };
 		CE6B82231BCB5E74005D5149 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		CE733A601BC377A900EFE8E6 /* FindDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindDetailViewController.swift; sourceTree = "<group>"; };
+		CEAFC3271BD0E9610051D534 /* FavorViewControllerBak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavorViewControllerBak.swift; sourceTree = "<group>"; };
 		CEBC2B701BB071B7000C89A2 /* 易盟商圈.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "易盟商圈.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBC2B731BB071B7000C89A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBC2B751BB071B7000C89A2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +151,7 @@
 		CEDFB5941BCE243000D87497 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../../../Downloads/SwiftyJSON-master 2/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		CEDFB5AB1BCE484500D87497 /* classification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = classification.json; sourceTree = "<group>"; };
 		CEDFB5AD1BD0A1B400D87497 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		CEDFB5AF1BD0C01000D87497 /* BusinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
 		CEE0CDAB1BB2A5D3006EF24B /* HomeLifeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLifeView.swift; sourceTree = "<group>"; };
 		CEE0CDAD1BB2B54F006EF24B /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		CEE0CDAF1BB2BAD5006EF24B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
@@ -280,6 +284,7 @@
 				CEBC2B751BB071B7000C89A2 /* HomeViewController.swift */,
 				CEE0CDAD1BB2B54F006EF24B /* UserViewController.swift */,
 				CE6B82161BC7652C005D5149 /* TestViewController.swift */,
+				CEDFB5AF1BD0C01000D87497 /* BusinessViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 		CEDFB58D1BCCE12600D87497 /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				CEAFC3271BD0E9610051D534 /* FavorViewControllerBak.swift */,
 				CEE0CDB21BB45202006EF24B /* FindViewController.swift */,
 				CE733A601BC377A900EFE8E6 /* FindDetailViewController.swift */,
 				CEDFB58E1BCCE18B00D87497 /* SplitCommon.swift */,
@@ -548,6 +554,7 @@
 				CE6B821D1BC7B32A005D5149 /* ConfirmOrderViewController.swift in Sources */,
 				CE6B821B1BC7A40B005D5149 /* ConfirmOrderTableViewController.swift in Sources */,
 				CEDFB5AE1BD0A1B400D87497 /* Common.swift in Sources */,
+				CEDFB5B01BD0C01000D87497 /* BusinessViewController.swift in Sources */,
 				CEBC2B7C1BB071B7000C89A2 /* DotnarDemo2.xcdatamodeld in Sources */,
 				CEE0CDB31BB45202006EF24B /* FindViewController.swift in Sources */,
 				CE6B82191BC774AD005D5149 /* D3Notice.swift in Sources */,
@@ -556,6 +563,7 @@
 				CEBC2B761BB071B7000C89A2 /* HomeViewController.swift in Sources */,
 				CEE0CDB11BB3BBED006EF24B /* UserTableViewController.swift in Sources */,
 				CEE0CDAC1BB2A5D3006EF24B /* HomeLifeView.swift in Sources */,
+				CEAFC3281BD0E9610051D534 /* FavorViewControllerBak.swift in Sources */,
 				CEEE47241BC3603500DD890C /* SystemConfigViewController.swift in Sources */,
 				CEEE471E1BC3564600DD890C /* FavorViewController.swift in Sources */,
 				CEBC2B741BB071B7000C89A2 /* AppDelegate.swift in Sources */,
