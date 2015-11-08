@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FindDetailViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate {
+class FindDetailViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -16,6 +16,8 @@ class FindDetailViewController: UIViewController,UITableViewDataSource,UITableVi
     @IBOutlet weak var buttomEditView: UIView!
     @IBOutlet weak var scrollInnerView: UIView!
     @IBOutlet weak var commentTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -62,9 +64,13 @@ class FindDetailViewController: UIViewController,UITableViewDataSource,UITableVi
     
 
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        hidden("")
-        showNoticeSuc("发布成功！")
-        commentTextField.text = ""
+        if textField.text?.isEmpty != nil{
+           showNoticeErr("请填写完整!")
+        }else{
+            hidden("")
+            showNoticeSuc("发布成功！")
+            commentTextField.text = ""
+        }
         return true
     }
     
@@ -102,6 +108,24 @@ class FindDetailViewController: UIViewController,UITableViewDataSource,UITableVi
     
      func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
+    }
+    
+    // MARK: 图片选择
+    
+    @IBAction func selectPictureAction(sender: UIButton) {
+        let picker = UIImagePickerController()
+        picker.sourceType = .PhotoLibrary
+        picker.delegate = self
+        presentViewController(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        showNoticeSuc("上传成功")
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     //MARK : Tap GestureRecognizer

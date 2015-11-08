@@ -9,3 +9,5 @@
 import Foundation
 import UIKit
 public let themeColor = UIColor(r: 74, g: 144, b: 226, a: 1)
+public var BusinessTitle = ""
+public var BusinessURL = ""

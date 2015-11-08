@@ -11,13 +11,16 @@ import UIKit
 class BusinessViewController: UIViewController,UIWebViewDelegate {
 
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var titleLabel: UILabel!
 
     @IBOutlet weak var ac: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.delegate = self
-        let url = NSURL(string: "http://www.dotnar.com/")
+        let url = NSURL(string: BusinessURL)
         webView.loadRequest(NSURLRequest(URL: url!))
+        
+        titleLabel.text = BusinessTitle
     }
     
     func webViewDidStartLoad(webView: UIWebView) {
