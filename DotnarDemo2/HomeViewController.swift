@@ -85,11 +85,12 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UICollectionView
         
         for idx in 0...3{
             let image = UIImage(named: "MainPicture\(idx + 1)")
-            let imageView = UIImageView(image: image)
-            imageView.contentMode = UIViewContentMode.ScaleAspectFit
-            imageView.frame = CGRectMake(imageWidth * CGFloat(idx), 0, imageWidth, imageHeight)
+            let imageView = UIImageView(frame: CGRect(x: imageWidth * CGFloat(idx), y: 0, width: imageWidth, height: imageHeight))
+            imageView.image = image
+//            imageView.contentMode = UIViewContentMode.ScaleAspectFit
+//            imageView.frame = CGRectMake(imageWidth * CGFloat(idx), 0, imageWidth, imageHeight)
             /*  根据父级窗口改变大小？  calls sizeThatFits: with current view bounds and changes bounds size  */
-            imageView.sizeToFit()
+//            imageView.sizeToFit()
             Carousel.addSubview(imageView)
         }
         
@@ -234,13 +235,26 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UICollectionView
         }else if indexPath.row == 6 {
             let tapGuesture = UITapGestureRecognizer(target: self, action: Selector("go2Baidu:"))
             cell.addGestureRecognizer(tapGuesture)
+        }else if indexPath.row == 2 {
+            let tapGuesture = UITapGestureRecognizer(target: self, action: Selector("go2Financial:"))
+            cell.addGestureRecognizer(tapGuesture)
         }
         
         return cell
     }
     
     func go2Baidu(sender:AnyObject){
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.dotnar.com/")!)
+        BusinessURL = "http://www.dotnar.com"
+        BusinessTitle = "商城"
+        let businessControl = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("businessWebView")
+        presentViewController(businessControl, animated: true, completion: nil)
+    }
+    
+    func go2Financial(sender:AnyObject){
+        BusinessURL = "http://www.baidu.com"
+        BusinessTitle = "金融服务"
+        let businessControl = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("businessWebView")
+        presentViewController(businessControl, animated: true, completion: nil)
     }
     
     func go2Shop(sender:AnyObject){

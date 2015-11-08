@@ -9,15 +9,38 @@
 import UIKit
 import CoreData
 
+class MyDataProvider:NSObject,NIMKitDataProvider{
+    
+}
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,NIMLoginManagerDelegate,NIMSystemNotificationManagerDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        NIMSDK.sharedSDK().registerWithAppID("f32ccc626c25a6ed2d84a56cc177ffd8", cerName: "")
+        NIMSDK.sharedSDK().loginManager.addDelegate(self)
+        NIMSDK.sharedSDK().loginManager.autoLogin("test2", token: "123456")
+        //        [[NIMKit sharedKit] setProvider:[NTESDataProvider new]];
+        NIMKit.sharedKit().provider = MyDataProvider()
         return true
+    }
+    
+    func onReceiveSystemNotification(notification: NIMSystemNotification!) {
+        print(notification)
+    }
+    
+    func onLogin(step: NIMLoginStep) {
+        if step.rawValue == 5 {
+            print("登陆成功")
+        }
+    }
+    
+    func onAutoLoginFailed(error: NSError!) {
+        print("自动登陆出错:\(error)")
     }
 
     func applicationWillResignActive(application: UIApplication) {

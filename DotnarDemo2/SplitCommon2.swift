@@ -95,6 +95,7 @@ class SplitCommon2: UIViewController,UITableViewDataSource,UITableViewDelegate {
         let cell = UITableViewCell(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 40))
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 40))
         label.textAlignment = NSTextAlignment.Center
+        label.font = UIFont(name: label.font.fontName, size: 11)
         
         //如果是左边一个tableView
         if tableView.isEqual(leftTableView) {
@@ -148,7 +149,8 @@ class SplitCommon2: UIViewController,UITableViewDataSource,UITableViewDelegate {
         }else{
             hidden(self)
             let city = rightData[indexPath.row]
-            let fvc = parentViewController as! FindViewController
+//            let fvc = parentViewController as! FindViewController
+            let fvc = parentViewController as! ShopViewController
             if leftData.count > 30 {
                 if city == "全部" {
                     fvc.getCity(province)
